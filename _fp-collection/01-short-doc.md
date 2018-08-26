@@ -3,7 +3,8 @@ title: Short Documentary (Dutch)
 call-to-action: Watch video
 description: A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.
 thumbnail: thumbnail-ipo-doc.jpg
-permalink: test
+permalink: short-documentary-ipo
+color: eee
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/doSbHgOrX_c?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

@@ -24,6 +24,9 @@ body {
     font-size: 16px;
   }
 }
+// body#page {
+//   background-color: #eee;
+// }
 h1,h2 {
   font-size: 23px;
   @media (max-width: 1280px) {
@@ -220,8 +223,11 @@ hr {
   }
 }
 footer {
-  padding: 0 30px 20px 30px;
+  padding: 30px;
   text-align: center;
+  p {
+    margin: 0;
+  }
 }
 
 // PAGE transition

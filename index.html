@@ -4,10 +4,11 @@ layout: homepage
 
 
 {% for item in site.fp-collection %}
-<article class="grid-item">
+<article {% if item.color %}style="border-top: 1px solid black; background: #{{ item.color }};"{% endif %} class="grid-item">
   <h2>{{ item.title }}</h2>
   <p>{{ item.description }}</p>
-  {% if item.thumbnail %}<p><img src="{{ site.baseurl }}/img/{{ item.thumbnail }}"></p>{% endif %}
-  {% if item.call-to-action %}<a class="more" href="{{ item.url | prepend: site.baseurl }}">{{ item.call-to-action }}<span>→</span></a>{% endif %}
+  {% if item.thumbnail %}<p><img draggable="false" alt="thumbnail" src="{{ site.baseurl }}/img/{{ item.thumbnail }}"></p>{% endif %}
+  {% if item.external-link %}<a class="more" target="_blank" href="{{ item.external-link }}">{{ item.call-to-action }}<span>→</span></a>
+  {% else if item.call-to-action %}<a class="more" href="{{ item.url | prepend: site.baseurl }}">{{ item.call-to-action }}<span>→</span></a>{% endif %}
 </article>
 {% endfor %}

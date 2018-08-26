@@ -18,7 +18,7 @@ It's made possible by the following open source projects:
 - Normalize.css
 - FitVids.js
 
-You can view the source of this website on Github: 
+You can view the source of this website on Github: https://github.com/steinvc/personal-website
 -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -31,6 +31,13 @@ You can view the source of this website on Github:
       
     </title>
     <meta name="description" content="This is the personal website of Stijn van Cuijk. A designer currently studying Industrial Product Design at the HAN.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff3200">
+    <meta name="msapplication-TileColor" content="#ff3200">
+    <meta name="theme-color" content="#ff3200">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -56,7 +63,7 @@ You can view the source of this website on Github:
     <p>
       Arnhem, Netherlands<br>
       <a href="mailto:hello@stijn.vc">hello@stijn.vc</a><br>
-      <a href="https://www.linkedin.com/in/stijnvancuijk/">LinkedIn</a><br>
+      <a target="_blank" href="https://www.linkedin.com/in/stijnvancuijk/">LinkedIn</a><br>
     </p>
   </div>
 </header>
@@ -67,7 +74,7 @@ You can view the source of this website on Github:
   <div class="grid">
     <div class="grid-sizer"></div>
     <article class="grid-item">
-      <img alt="Yours truly" title="Yours truly" src="/img/profile.jpg">
+      <img draggable="false" alt="Yours truly" title="Yours truly" src="/img/profile.jpg">
     </article>
     <article class="grid-item">
       <h2>Download Industrial Design Portfolio</h2>
@@ -80,17 +87,41 @@ You can view the source of this website on Github:
       <a href="\#" class="download-button">PDF, 12 MB</a>
     </article>
 
-<article class="grid-item">
+<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
   <h2>Short Documentary (Dutch)</h2>
   <p>A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.</p>
-  <p><img src="/img/thumbnail-ipo-doc.jpg"></p>
-  <a class="more" href="/test">Watch video<span>→</span></a>
+  <p><img draggable="false" alt="thumbnail" src="/img/thumbnail-ipo-doc.jpg"></p>
+  <a class="more" href="/short-documentary-ipo">Watch video<span>→</span></a>
+</article>
+
+<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+  <h2>Accreditation Infographics (Dutch)</h2>
+  <p>I designed two infographics for the accreditation of HAN Industrial Product Design.</p>
+  <p><img draggable="false" alt="thumbnail" src="/img/thumbnail-posters.png"></p>
+  <a class="more" href="/accreditation-infographics">View<span>→</span></a>
+</article>
+
+<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+  <h2>Design Inspiration</h2>
+  <p>View my Savee image board.</p>
+  <p><img draggable="false" alt="thumbnail" src="/img/thumbnail-inspiration.png"></p>
+  <a class="more" target="_blank" href="https://savee.it/stijn/">Savee.it/stijn<span>→</span></a>
+  
+</article>
+
+<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+  <h2>Music 🎵</h2>
+  <p>In my free time I like to produce electronic music. You can listen to it on Bandcamp.</p>
+  
+  <a class="more" target="_blank" href="https://stijn1.bandcamp.com/">Listen<span>→</span></a>
+  
 </article>
 
 
 </div>
 </div>
 
+<hr>
 <footer>
   <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
 </footer>
