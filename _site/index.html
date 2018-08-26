@@ -1,0 +1,118 @@
+<!--
+       __
+      /\ \__  __    __
+  ____\ \ ,_\/\_\  /\_\    ___        __  __    ___
+ /',__\\ \ \/\/\ \ \/\ \ /' _ `\     /\ \/\ \  /'___\
+/\__, `\\ \ \_\ \ \ \ \ \/\ \/\ \  __\ \ \_/ |/\ \__/
+\/\____/ \ \__\\ \_\_\ \ \ \_\ \_\/\_\\ \___/ \ \____\
+ \/___/   \/__/ \/_/\ \_\ \/_/\/_/\/_/ \/__/   \/____/
+                   \ \____/
+                    \/___/
+
+This website is build and maintained by me (Stijn van Cuijk, hello@stijn.vc)
+It's made possible by the following open source projects:
+- Jekyll
+- jQuery
+- masonry
+- Zoom.js
+- Normalize.css
+- FitVids.js
+
+You can view the source of this website on Github: 
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      
+      Stijn van Cuijk
+      
+    </title>
+    <meta name="description" content="This is the personal website of Stijn van Cuijk. A designer currently studying Industrial Product Design at the HAN.">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.fitvids.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+
+  </head>
+
+<body id="homepage">
+<header class="clearfix">
+  <div class="title">
+    <h1><a href="/">Stijn van Cuijk</a></h1>
+    <!-- <img style="width: 320px; float: right; margin-top: 5px;" src="src/header-img.png"> -->
+  </div>
+  <div class="description">
+    <p>This is the personal website of Stijn van Cuijk. A designer currently
+      studying Industrial Product Design at the <em title="HAN University of Applied Sciences">HAN</em>. Stijn likes to practice
+      his design approach in many different fields. The main focus lays on
+      the process and a way of thinking. Everything can be designed.</p>
+  </div>
+  <div class="contact">
+    <p>
+      Arnhem, Netherlands<br>
+      <a href="mailto:hello@stijn.vc">hello@stijn.vc</a><br>
+      <a href="https://www.linkedin.com/in/stijnvancuijk/">LinkedIn</a><br>
+    </p>
+  </div>
+</header>
+<hr>
+
+
+<div id="main">
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <article class="grid-item">
+      <img alt="Yours truly" title="Yours truly" src="/img/profile.jpg">
+    </article>
+    <article class="grid-item">
+      <h2>Download Industrial Design Portfolio</h2>
+      <p>Last updated: 2018/8/26</p>
+      <a href="\#" class="download-button">PDF, 84 MB</a>
+    </article>
+    <article class="grid-item">
+      <h2>Download Curriculum Vitae</h2>
+      <p>Last updated: 2018/8/5</p>
+      <a href="\#" class="download-button">PDF, 12 MB</a>
+    </article>
+
+<article class="grid-item">
+  <h2>Short Documentary (Dutch)</h2>
+  <p>A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.</p>
+  <p><img src="/img/thumbnail-ipo-doc.jpg"></p>
+  <a class="more" href="/test">Watch video<span>→</span></a>
+</article>
+
+
+</div>
+</div>
+
+<footer>
+  <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
+</footer>
+
+<script src="/js/zoom.js"></script>
+<script src="/js/pagetransition.js"></script>
+<script>
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: 30,
+    transitionDuration: 0
+  });
+
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+  $(document).ready(function(){
+    $("#main").fitVids();
+  });
+</script>
+</body>
+</html>
+

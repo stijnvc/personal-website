@@ -1,0 +1,114 @@
+<!--
+       __
+      /\ \__  __    __
+  ____\ \ ,_\/\_\  /\_\    ___        __  __    ___
+ /',__\\ \ \/\/\ \ \/\ \ /' _ `\     /\ \/\ \  /'___\
+/\__, `\\ \ \_\ \ \ \ \ \/\ \/\ \  __\ \ \_/ |/\ \__/
+\/\____/ \ \__\\ \_\_\ \ \ \_\ \_\/\_\\ \___/ \ \____\
+ \/___/   \/__/ \/_/\ \_\ \/_/\/_/\/_/ \/__/   \/____/
+                   \ \____/
+                    \/___/
+
+This website is build and maintained by me (Stijn van Cuijk, hello@stijn.vc)
+It's made possible by the following open source projects:
+- Jekyll
+- jQuery
+- masonry
+- Zoom.js
+- Normalize.css
+- FitVids.js
+
+You can view the source of this website on Github: 
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      
+      Short Documentary (Dutch) — Stijn van Cuijk
+      
+    </title>
+    <meta name="description" content="A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/jquery.fitvids.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+
+  </head>
+
+<body id="page">
+<header class="clearfix">
+  <div class="left-col">
+    <a class="home-button" href="/">← Home</a>
+  </div>
+  <div class="right-col">
+    <h1 style=" margin: 0;"><a href="/">Stijn van Cuijk</a></h1>
+    <!-- <img style="width: 320px; float: right; margin-top: 5px;" src="src/header-img.png"> -->
+  </div>
+</header>
+<hr>
+
+
+
+<div id="main">
+  <article class="page">
+    <h1>Short Documentary (Dutch)</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/doSbHgOrX_c?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p>A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.</p>
+
+<p>The documentary was filmed and edited by Industrial Product Design students commissioned by the HAN University of Applied Sciences.</p>
+
+<hr />
+
+<p><strong>Directed and produced by:</strong><br />
+Stijn van Cuijk</p>
+
+<p><strong>Co-produced by:</strong><br />
+Bram Snijders<br />
+Wing-Han Tang</p>
+
+<p><strong>Interviews:</strong><br />
+Sjoerd Overeem<br />
+Marin de Vree<br />
+Rinse Timmerman<br />
+Stan Brandwijk<br />
+Frank van Altena<br />
+Gijs Ebben<br />
+Pim Cornelder<br />
+Nienke Latta<br />
+Emma Vos</p>
+
+  </article>
+</div>
+
+
+<footer>
+  <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
+</footer>
+
+<script src="/js/zoom.js"></script>
+<script src="/js/pagetransition.js"></script>
+<script>
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: 30,
+    transitionDuration: 0
+  });
+
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+  $(document).ready(function(){
+    $("#main").fitVids();
+  });
+</script>
+</body>
+</html>
+

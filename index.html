@@ -1,0 +1,13 @@
+---
+layout: homepage
+---
+
+
+{% for item in site.fp-collection %}
+<article class="grid-item">
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.description }}</p>
+  {% if item.thumbnail %}<p><img src="{{ site.baseurl }}/img/{{ item.thumbnail }}"></p>{% endif %}
+  {% if item.call-to-action %}<a class="more" href="{{ item.url | prepend: site.baseurl }}">{{ item.call-to-action }}<span>→</span></a>{% endif %}
+</article>
+{% endfor %}

@@ -1,0 +1,25 @@
+{% include head.html %}
+<body id="homepage">
+{% include header-homepage.html %}
+
+<div id="main">
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <article class="grid-item">
+      <img alt="Yours truly" title="Yours truly" src="{{ site.baseurl }}/img/profile.jpg">
+    </article>
+    <article class="grid-item">
+      <h2>Download Industrial Design Portfolio</h2>
+      <p>Last updated: {{ site.portfolio.last-updated }}</p>
+      <a href="{{ site.portfolio.download-url }}" class="download-button">PDF, {{ site.portfolio.size }} MB</a>
+    </article>
+    <article class="grid-item">
+      <h2>Download Curriculum Vitae</h2>
+      <p>Last updated: {{ site.cv.last-updated }}</p>
+      <a href="{{ site.cv.download-url }}" class="download-button">PDF, {{ site.cv.size }} MB</a>
+    </article>
+{{ content }}
+</div>
+</div>
+
+{% include footer.html %}
