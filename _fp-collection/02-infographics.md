@@ -10,6 +10,6 @@ color: eee
 I designed two infographics for the accreditation of HAN Industrial Product Design. One displaying the newly developed curriculum and the other visualizing the graduation process
 
 
-![Poster]({{ baseurl }}/img/poster-2.png)
+![Poster](/personal-website/img/poster-2.png)
 
-![Poster]({{ baseurl }}/img/poster-1.png)
+![Poster](/personal-website/img/poster-1.png)
