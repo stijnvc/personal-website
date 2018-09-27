@@ -18,8 +18,8 @@ cv:
 
 # The URL of the homepage of your site (without trailing slash). Leave this
 # empty when you run Jekyll locally.
-url: https://steinvc.github.io
-baseurl: "/personal-website"
+url: https://stijn.vc
+baseurl: ""
 
 collections:
   fp-collection:
