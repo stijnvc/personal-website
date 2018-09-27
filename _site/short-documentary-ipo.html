@@ -93,18 +93,25 @@ Emma Vos</p>
   </article>
 </div>
 
-<style>
 
-#page .zoom-overlay {
-  background: #eee;
-}
+<script>
+$( "p:has(img)" ).addClass( "imgonly" );
+</script>
+<style>
+#page p a {
+  text-shadow:
+ -1px -1px 0 #eee,
+  1px -1px 0 #eee,
+  -1px 1px 0 #eee,
+   1px 1px 0 #eee;
+ }
 </style>
 <hr>
 <footer>
   <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
 </footer>
 
-<script src="/js/zoom.js"></script>
+
 <script src="/js/pagetransition.js"></script>
 <script>
   var $grid = $('.grid').masonry({

@@ -10,10 +10,17 @@
   </article>
 </div>
 
-<style>
 
-#page .zoom-overlay {
-  background: #{{ page.color }};
-}
+<script>
+$( "p:has(img)" ).addClass( "imgonly" );
+</script>
+<style>
+#page p a {
+  text-shadow:
+ -1px -1px 0 #{{ page.color }},
+  1px -1px 0 #{{ page.color }},
+  -1px 1px 0 #{{ page.color }},
+   1px 1px 0 #{{ page.color }};
+ }
 </style>
 {% include footer.html %}

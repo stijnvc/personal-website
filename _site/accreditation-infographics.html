@@ -66,25 +66,32 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     <h1>Accreditation Infographics (Dutch)</h1>
     <p>I designed two infographics for the accreditation of HAN Industrial Product Design. One displaying the newly developed curriculum and the other visualizing the graduation process</p>
 
-<p><img src="/img/poster-2.png" alt="Poster" /></p>
+<p><img src="/personal-website/img/poster-2.png" alt="Poster" /></p>
 
-<p><img src="/img/poster-1.png" alt="Poster" /></p>
+<p><img src="/personal-website/img/poster-1.png" alt="Poster" /></p>
 
   </article>
 </div>
 
-<style>
 
-#page .zoom-overlay {
-  background: #eee;
-}
+<script>
+$( "p:has(img)" ).addClass( "imgonly" );
+</script>
+<style>
+#page p a {
+  text-shadow:
+ -1px -1px 0 #eee,
+  1px -1px 0 #eee,
+  -1px 1px 0 #eee,
+   1px 1px 0 #eee;
+ }
 </style>
 <hr>
 <footer>
   <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
 </footer>
 
-<script src="/js/zoom.js"></script>
+
 <script src="/js/pagetransition.js"></script>
 <script>
   var $grid = $('.grid').masonry({

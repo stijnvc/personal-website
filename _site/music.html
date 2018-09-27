@@ -30,7 +30,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
       Music 🎵 — Stijn van Cuijk
       
     </title>
-    <meta name="description" content="In my free time I like to produce electronic music. You can listen to it on Bandcamp.">
+    <meta name="description" content="When I'm not designing, I like to produce electronic music.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -64,23 +64,52 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
 <div id="main">
   <article class="page">
     <h1>Music 🎵</h1>
-    <p>In my free time I like to produce electronic music. You can listen to it on <a href="https://stijn1.bandcamp.com/">Bandcamp</a>.</p>
+    <p><img src="/img/music.jpg" alt="header" /></p>
+
+<hr />
+
+<p>Randomized</p>
+<audio controls="" src="/mp3/randomized.mp3">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+<hr />
+<p>Dystopia</p>
+<audio controls="" src="/mp3/dystopia.mp3">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+<hr />
+<p>Timbre</p>
+<audio controls="" src="/mp3/timbre.mp3">
+  Your browser does not support the <code>audio</code> element.
+</audio>
+<hr />
+<p>Waves</p>
+<audio controls="" src="/mp3/waves.mp3">
+  Your browser does not support the <code>audio</code> element.
+</audio>
 
   </article>
 </div>
 
-<style>
 
-#page .zoom-overlay {
-  background: #eee;
-}
+<script>
+$( "p:has(img)" ).addClass( "imgonly" );
+</script>
+<style>
+#page p a {
+  text-shadow:
+ -1px -1px 0 #eee,
+  1px -1px 0 #eee,
+  -1px 1px 0 #eee,
+   1px 1px 0 #eee;
+ }
 </style>
 <hr>
 <footer>
   <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
 </footer>
 
-<script src="/js/zoom.js"></script>
+
 <script src="/js/pagetransition.js"></script>
 <script>
   var $grid = $('.grid').masonry({
