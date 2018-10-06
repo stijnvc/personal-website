@@ -1,5 +1,5 @@
 ---
-title: Music 🎵
+title: Music Production
 call-to-action: Listen
 description: When I'm not designing, I like to produce electronic music.
 permalink: music

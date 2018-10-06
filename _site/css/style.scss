@@ -275,6 +275,10 @@ blockquote {
       float: right;
     }
   }
+  a.permalink {
+    color: black;
+    text-decoration: none;    
+  }
   .grid-sizer,
   .grid-item {
     width: calc(25% - 90px / 4);
@@ -339,31 +343,31 @@ footer {
 
 // PAGE transition
 
-body#page {
-  animation: fadeSiteInPage 0.3s ease forwards; /* [1] */
-}
-body#page.fadeSiteOut {
-  animation:  fadeSiteOutPage 0.3s ease forwards; /* [2] */
-}
-body#homepage {
-  animation: fadeSiteInHome 0.3s ease forwards; /* [1] */
-}
-body#homepage.fadeSiteOut {
-  animation:  fadeSiteOutHome 0.3s ease forwards; /* [2] */
-}
-@keyframes fadeSiteInPage { /* [1] */
-    from   { opacity: 0; transform: translateY(30px);}
-    to    { opacity: 1; transform: translateY(0px);}
-}
-@keyframes fadeSiteOutPage { /* [1] */
-    from   { opacity: 1; transform: translateY(0px);}
-    to    { opacity: 0; transform: translateY(30px);}
-}
-@keyframes fadeSiteInHome { /* [2] */
-    from   { opacity: 0; transform: scale(.95);}
-    to     { opacity: 1; transform: scale(1);}
-}
-@keyframes fadeSiteOutHome { /* [2] */
-    from   { opacity: 1; transform: scale(1);}
-    to     { opacity: 0; transform: scale(.95);}
-}
+// body#page {
+//   animation: fadeSiteInPage 0.3s ease forwards; /* [1] */
+// }
+// body#page.fadeSiteOut {
+//   animation:  fadeSiteOutPage 0.3s ease forwards; /* [2] */
+// }
+// body#homepage {
+//   animation: fadeSiteInHome 0.3s ease forwards; /* [1] */
+// }
+// body#homepage.fadeSiteOut {
+//   animation:  fadeSiteOutHome 0.3s ease forwards; /* [2] */
+// }
+// @keyframes fadeSiteInPage { /* [1] */
+//     from   { opacity: 0; transform: translateY(30px);}
+//     to    { opacity: 1; transform: translateY(0px);}
+// }
+// @keyframes fadeSiteOutPage { /* [1] */
+//     from   { opacity: 1; transform: translateY(0px);}
+//     to    { opacity: 0; transform: translateY(30px);}
+// }
+// @keyframes fadeSiteInHome { /* [2] */
+//     from   { opacity: 0; transform: scale(.95);}
+//     to     { opacity: 1; transform: scale(1);}
+// }
+// @keyframes fadeSiteOutHome { /* [2] */
+//     from   { opacity: 1; transform: scale(1);}
+//     to     { opacity: 0; transform: scale(.95);}
+// }
