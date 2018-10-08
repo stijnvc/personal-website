@@ -37,7 +37,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff3200">
     <meta name="msapplication-TileColor" content="#ff3200">
-    <meta name="theme-color" content="#ff3200">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -50,7 +50,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
 <body id="homepage">
 <header class="clearfix">
   <div class="title">
-    <h1><a href="/">Stijn van Cuijk</a></h1>
+    <h1 ><a style="color: rgba(255, 50, 0, 1);"  href="/">Stijn van Cuijk</a></h1>
     <!-- <img style="width: 320px; float: right; margin-top: 5px;" src="src/header-img.png"> -->
   </div>
   <div class="description">
@@ -58,6 +58,9 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
       studying Industrial Product Design at the <em title="HAN University of Applied Sciences">HAN</em>. Stijn likes to practice
       his design approach in many different fields. The main focus lies on
       the process and a way of thinking. Everything can be designed.</p>
+      <p>Currently enrolled in <a href="http://codesignstudio.strikingly.com/">Co-Design Studio</a>, a
+        full-time minor in human centered design, working for real clients with 
+        coaching by experienced design professionals.</p>
   </div>
   <div class="contact">
     <p>
@@ -67,18 +70,16 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     </p>
   </div>
 </header>
-<hr>
 
 
 <div id="main">
   <div class="grid">
     <div class="grid-sizer"></div>
-    <article class="grid-item">
+    <!-- <article class="grid-item">
       <img draggable="false" alt="Yours truly" title="Yours truly" src="/img/profile.jpg">
-    </article>
+    </article> -->
     <article class="grid-item">
-      <h2>Current Occupation</h2>
-      <p><a href="http://codesignstudio.strikingly.com/">Co-Design Studio</a>, a full-time minor in human centered design, working for real clients with coaching of experienced design professionals.</p>
+      <blockquote><p>“Successful communication depends on how well we listen, rather than how well we push our opinions on the person seated before us.”<p>― Kenya Hara</p></p></blockquote>
     </article>
     <!-- <article class="grid-item">
       <h2>Download Curriculum Vitae</h2>
@@ -86,7 +87,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
       <a href="\#" class="download-button">PDF, 12 MB</a>
     </article> -->
 
-<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+<article style="border: 1px dashed black;" class="grid-item">
     <h2>Short Documentary (Dutch)</h2>
     <p>A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.</p>
 
@@ -96,7 +97,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     <a class="more" href="/short-documentary-ipo">Watch video<span>→</span></a>
 </article>
 
-<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+<article style="border: 1px dashed black;" class="grid-item">
     <h2>Accreditation Infographics (Dutch)</h2>
     <p>I designed two infographics for the accreditation of HAN Industrial Product Design.</p>
 
@@ -106,7 +107,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     <a class="more" href="/accreditation-infographics">View<span>→</span></a>
 </article>
 
-<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+<article style="border: 1px dashed black;" class="grid-item">
     <h2>Revolve Waterbottle</h2>
     <p>A functionalist waterbottle.</p>
 
@@ -116,7 +117,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     <a class="more" href="/revolve-waterbottle">View design process<span>→</span></a>
 </article>
 
-<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+<article style="border: 1px dashed black;" class="grid-item">
     <h2>Markdown Editor</h2>
     <p>A Windows Markdown editor for distraction free writing. Built on web technologies.</p>
 
@@ -126,7 +127,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     <a class="more" href="/nota-markdown-editor">Learn more & download<span>→</span></a>
 </article>
 
-<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+<article style="border: 1px dashed black;" class="grid-item">
     <h2>Design Inspiration</h2>
     <p>View my Savee image board.</p>
 
@@ -138,7 +139,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
     
 </article>
 
-<article style="border-top: 1px solid black; background: #eee;" class="grid-item">
+<article style="border: 1px dashed black;" class="grid-item">
     <h2>Music Production</h2>
     <p>When I'm not designing, I like to produce electronic music.</p>
 
@@ -152,7 +153,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
 </div>
 </div>
 
-<hr>
+
 <footer>
   <p>Copyright <span style="cursor: help;" title="©">🍊</span> Stijn van Cuijk, 2018</p>
 </footer>
@@ -174,6 +175,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
   $(document).ready(function(){
     $("#main").fitVids();
   });
+
 </script>
 </body>
 </html>

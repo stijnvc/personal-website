@@ -4,7 +4,7 @@ layout: homepage
 
 
 {% for item in site.fp-collection %}
-<article {% if item.color %}style="border-top: 1px solid black; background: #{{ item.color }};"{% endif %} class="grid-item">
+<article {% if item.color %}style="border: 1px dashed black;"{% endif %} class="grid-item">
     <h2>{{ item.title }}</h2>
     <p>{{ item.description }}</p>
 
