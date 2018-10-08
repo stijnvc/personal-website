@@ -103,7 +103,7 @@ $scolor: rgba(0, 0, 0, 1);
 
 
 body {
-  background-color: $mcolor;
+  background-color: rgba(221, 221, 221, 1);
   font-family: "Freight Neo Pro";
   line-height: 1.3;
   font-weight: 500;
@@ -248,10 +248,10 @@ blockquote {
   font-style: italic;
 }
 #main {
-  padding: 30px 30px;
+  padding: 30px 30px 90px 30px;
+  background: $mcolor;
   max-width: 1920px;
   margin: 0 auto;
-  margin-bottom: 60px;
   p {
     margin-top: 1em;
   }
