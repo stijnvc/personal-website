@@ -4,7 +4,8 @@ call-to-action: Learn more & download
 description: A Windows Markdown editor for distraction free writing. Built on web technologies.
 thumbnail: portfolio/nota-1.png
 permalink: nota-markdown-editor
-color: eee
+year: 2014
+category: UI Design / Development
 ---
 
 [Download v0.2.2 (ZIP, 16.9 MB) for Windows](/download/nota_0.2.2_setup_and_guide.zip).

@@ -1,23 +1,11 @@
 {% include head.html %}
 <body id="homepage">
-{% include header-homepage.html %}
+  <div class="wrapper">
+{% include header.html %}
 
 <div id="main">
-  <div class="grid">
-    <div class="grid-sizer"></div>
-    <!-- <article class="grid-item">
-      <img draggable="false" alt="Yours truly" title="Yours truly" src="{{ site.baseurl }}/img/profile.jpg">
-    </article> -->
-    <article class="grid-item">
-      <blockquote><p>“Successful communication depends on how well we listen, rather than how well we push our opinions on the person seated before us.”<p>― Kenya Hara</p></p></blockquote>
-    </article>
-    <!-- <article class="grid-item">
-      <h2>Download Curriculum Vitae</h2>
-      <p>Last updated: {{ site.cv.last-updated }}</p>
-      <a href="{{ site.cv.download-url }}" class="download-button">PDF, {{ site.cv.size }} MB</a>
-    </article> -->
 {{ content }}
-</div>
 </div>
 
 {% include footer.html %}
+</div>

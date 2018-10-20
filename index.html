@@ -4,15 +4,36 @@ layout: homepage
 
 
 {% for item in site.fp-collection %}
-<article {% if item.color %}style="border: 1px dashed black;"{% endif %} class="grid-item">
-    <h2>{{ item.title }}</h2>
-    <p>{{ item.description }}</p>
-
-      {% if item.external-link %}<a class="permalink" target="_blank" href="{{ item.external-link }}">
-      {% else if item.call-to-action %}<a class="permalink" href="{{ item.url | prepend: site.baseurl }}">{% endif %}
-    {% if item.thumbnail %}<p><img draggable="false" alt="thumbnail" src="{{ site.baseurl }}/img/{{ item.thumbnail }}"></p>{% endif %}
+<article>
+  <a class="permalink" href="{{ item.url | prepend: site.baseurl }}">
+    <img draggable="false" alt="thumbnail" src="{{ site.baseurl }}/img/{{ item.thumbnail }}">
+    <div class="info clearfix">
+      <div class="description">
+        <h1>{{ item.title }}</h1>
+        <p>{{ item.description }}</p>
+      </div>
+      <div class="meta">
+        <p>{{ item.category }}</p>
+        <p>{{ item.year }}</p>
+      </div>
+    </div>
   </a>
-    {% if item.external-link %}<a class="more" target="_blank" href="{{ item.external-link }}">{{ item.call-to-action }}<span>→</span></a>
-    {% else if item.call-to-action %}<a class="more" href="{{ item.url | prepend: site.baseurl }}">{{ item.call-to-action }}<span>→</span></a>{% endif %}
 </article>
 {% endfor %}
+<style>
+a.projects {
+  position: relative;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  background: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+  background: -moz-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+  background: -o-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+  background: -ms-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+  -webkit-background-size: 1px 1px;
+  -moz-background-size: 1px 1px;
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 84%;
+}
+</style>
