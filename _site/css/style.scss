@@ -101,16 +101,119 @@ $accent: #EF4028;
 	font-style: normal;
 }
 
+
+// AKZIDENZ GROTESK
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-ExtraLightIt.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-ExtraBoldIt.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-MedIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('fonts/AkzidGrtskNext-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('AkzidGrtskNext-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('AkzidGrtskNext-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz Grotesk Next';
+    src: url('AkzidGrtskNext-BoldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Akzidenz-Grotesk Next";
+  font-family: "Akzidenz Grotesk Next";
   font-size: 22px;
   line-height: 1.4;
-  font-weight: 200;
+  font-weight: 300;
   color: $dark;
-  margin: 0 1em;
+  padding: 0 1em;
 }
 html {
   overflow-y: scroll;
@@ -131,7 +234,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-img {
+img, video {
   display: block;
   max-width: 100%;
 }
@@ -140,6 +243,14 @@ img {
   max-width: 900px;
   min-width: 600px;
   margin: 0 auto;
+}
+.wrapper::after {
+  content: "";
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  background-color: white;
+  height: 1px;
 }
 header {
   font-size: 1.15em;
@@ -162,7 +273,7 @@ header {
     a {
       display: inline-block;
       margin-left: 20px;
-      font-weight: 200;
+      font-weight: 300;
     }
     a:hover {
       position: relative;
@@ -180,6 +291,12 @@ header {
       background-position: 0 84%;
     }
   }
+}
+p.homepage-description {
+  max-width: 100%;
+  margin: 1em 0;
+  color: $light;
+  opacity: .9;
 }
 #homepage {
   article {
@@ -237,7 +354,7 @@ header {
     }
     h1, h2, h3 {
       font-weight: 400;
-      margin-top: 1.2em;
+      margin-top: 2em;
       margin-bottom: 1em;
       color: $dark;
     }

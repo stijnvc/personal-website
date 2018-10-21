@@ -2,11 +2,18 @@
 layout: homepage
 ---
 
-
+<p class="homepage-description">I am a designer currently studying Industrial Product Design at the HAN University of Applied Sciences. This is a selection of my work from various creative fields.</p>
 {% for item in site.fp-collection %}
 <article>
   <a class="permalink" href="{{ item.url | prepend: site.baseurl }}">
-    <img draggable="false" alt="thumbnail" src="{{ site.baseurl }}/img/{{ item.thumbnail }}">
+    {% if item.video %}
+    <video autoplay loop muted poster="{{ site.baseurl }}/vid/{{ item.video }}/poster.jpg">
+       <source src="{{ site.baseurl }}/vid/{{ item.video }}/video.mp4" type="video/mp4">
+       <source src="{{ site.baseurl }}/vid/{{ item.video }}/video.webm" type="video/webm">
+    </video>
+    {% else %}
+      <img draggable="false" alt="thumbnail" src="{{ site.baseurl }}/img/{{ item.thumbnail }}">
+    {% endif %}
     <div class="info clearfix">
       <div class="description">
         <h1>{{ item.title }}</h1>

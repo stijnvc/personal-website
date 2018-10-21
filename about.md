@@ -5,6 +5,8 @@ description: About page.
 permalink: about
 ---
 
+![foto of stijn](/img/profile.jpg) <small>Me, stoking a fire in the wilderness of Romania.</small>
+
 Stijn is a designer currently studying Industrial Product Design at the HAN University of Applied Sciences. He likes to practice
 his design approach in many different fields. The main focus lies on
 the process and a way of thinking. Everything can be designed.
@@ -22,6 +24,28 @@ Arnhem, Netherlands 2018
 [LinkedIn](https://www.linkedin.com/in/stijnvancuijk/)<br>
 [Behance](https://www.behance.net/stijnvc)<br>
 Design inspiration: [Savee image board](https://savee.it/you/)
+
+## Experience
+
+>Industrial Design Intern<br>
+>[Studio Mango](https://studiomango.nl/)<br>
+>nov. 2017 – feb. 2018<br>
+>Breda, NL
+
+>Designer<br>
+>[Smaac](https://smaac.nl/)<br>
+>jun. 2017 – nov. 2017<br>
+>'s-Hertogenbosch, NL
+
+>Project Engineering Intern<br>
+>[GBO](https://gbo.eu/)<br>
+>feb. 2017 – mei 2017<br>
+>Helmond, NL
+
+>Product Design Intern<br>
+>[Smaac](https://smaac.nl/)<br>
+>sep. 2015 – jan. 2016<br>
+>'s-Hertogenbosch, NL
 
 <style>
 a.about {

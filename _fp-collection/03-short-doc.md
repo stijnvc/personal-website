@@ -1,7 +1,8 @@
 ---
 title: Short Documentary (Dutch)
-description: A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics.
+description: A short documentary about Industrial Product Design at the HAN in which students give their opinions about various topics regarding the program.
 thumbnail: thumbnail-ipo-doc.jpg
+video: short-doc
 permalink: short-documentary-ipo
 year: 2018
 category: Video Production
