@@ -15,8 +15,6 @@ Currently enrolled in [Co-Design Studio](http://codesignstudio.strikingly.com/),
 full-time minor in human centered design, working for real clients with
 coaching by experienced design professionals.
 
-Arnhem, Netherlands 2018
-
 [contact@stijn.vc](mailto:contact@stijn.vc)
 
 ## On The Web
