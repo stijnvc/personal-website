@@ -72,7 +72,7 @@ Testing a 3D printed prototype in different environments.
 ![Filling the bottle and filtration visualization](/img/portfolio/drinkfles-2/filling-min.jpg)
 
 ![Parts overview](/img/portfolio/drinkfles-2/parts-min.jpg)
-
+ 
 ## Packaging Concept
 
 ![Packaging visualization](/img/portfolio/drinkfles-2/packaging-min.jpg)
@@ -80,6 +80,6 @@ Testing a 3D printed prototype in different environments.
 ---
 
 Revolve Water Bottle project in collaboration with [Maarten Roos](https://www.linkedin.com/in/maarten-roos-345084134/).<br>
-[View this project on Behance](https://www.behance.net/gallery/58708521/Revolve-Waterbottle).<br> 
+[View this project on Behance](https://www.behance.net/gallery/58708521/Revolve-Waterbottle).<br>
 Contact: [contact@stijn.vc](mailto:contact@stijn.vc)<br>
 2017
