@@ -2,9 +2,9 @@
 layout: homepage
 ---
 
-<p class="homepage-description">I am a designer currently studying Industrial Product Design at the HAN University of Applied Sciences. This is a selection of my work from various creative fields.</p>
-{% for item in site.fp-collection %}
-<article>
+<div class="fade"><p class="homepage-description">I am a designer currently studying Industrial Product Design at the HAN University of Applied Sciences. This is a selection of my work from various creative fields.</p>
+</div>{% for item in site.fp-collection %}
+<article class="fade">
   <a class="permalink" href="{{ item.url | prepend: site.baseurl }}">
     {% if item.video %}
     <video autoplay loop muted poster="{{ site.baseurl }}/vid/{{ item.video }}/poster.jpg">

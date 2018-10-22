@@ -30,7 +30,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
       Miscellaneous Projects — Stijn van Cuijk
       
     </title>
-    <meta name="description" content="This is the personal website of Stijn van Cuijk. A designer currently studying Industrial Product Design at the HAN.">
+    <meta name="description" content="Personal website and portfolio of Stijn van Cuijk, a designer currently studying Industrial Product Design at the HAN University of Applied Sciences.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -49,7 +49,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
 
 <body id="page">
     <div class="wrapper">
-<header class="clearfix">
+<header class="fade clearfix">
   <div class="title">
     <h1 ><a href="/">Stijn van Cuijk</a></h1>
   </div>
@@ -61,7 +61,7 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
 
 
 <div id="main">
-  <article>
+  <article class="fade">
     <h1>Miscellaneous Projects</h1>
     <p>Miscellaneous Industrial Design projects dating from 2014 to present, sorted by newest first.</p>
 
@@ -111,9 +111,10 @@ You can view the source of this website on Github: https://github.com/steinvc/pe
 
 <script>
 $( "p:has(img)" ).addClass( "img" );
+$( "p:has(img) img" ).addClass( "fade" );
 </script>
 
-<footer>
+<footer class="fade">
   <p><small>© 2018 Stijn van Cuijk — contact@stijn.vc</small></p>
 </footer>
 
@@ -135,7 +136,25 @@ $( "p:has(img)" ).addClass( "img" );
     $("#main").fitVids();
   });
 
+  // fade in divs
+  var fadein = $('.fade');
+  $.each(fadein, function(i, item) {
+  	setTimeout(function() {
+  		$(item).addClass("fade-in"); // duration of fadein
+  	}, 100 * i); // duration between fadeins
+  });
+
 </script>
+<noscript>
+<style>
+.fade {
+  opacity: 1;
+}
+#homepage article {
+  opacity: .9;
+}
+</style>
+</noscript>
 </body>
 </html>
 

@@ -298,11 +298,16 @@ p.homepage-description {
   color: $light;
   opacity: .9;
 }
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade-in {
+  opacity: 1;
+}
 #homepage {
   article {
     margin: 2em 0;
-    opacity: .9;
-    transition: opacity 0.5s ease;
     .info {
       margin-top: .5em;
       color: $light;
@@ -330,8 +335,11 @@ p.homepage-description {
       filter: brightness(98%);
     }
   }
+  article.fade-in {
+    opacity: .9;
+  }
   article:hover {
-    opacity: 1;
+  opacity: 1;
     .info {
       color: $dark;
     }

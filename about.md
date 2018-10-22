@@ -7,7 +7,7 @@ permalink: about
 
 ![foto of stijn](/img/profile.jpg) <small>Me, stoking a fire in the wilderness of Romania.</small>
 
-Stijn is a designer currently studying Industrial Product Design at the HAN University of Applied Sciences. He likes to practice
+Stijn is a designer studying Industrial Product Design at the HAN University of Applied Sciences. He likes to practice
 his design approach in many different fields. The main focus lies on
 the process and a way of thinking. Everything can be designed.
 

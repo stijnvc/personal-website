@@ -1,5 +1,5 @@
 
-<footer>
+<footer class="fade">
   <p><small>© 2018 Stijn van Cuijk — contact@stijn.vc</small></p>
 </footer>
 
@@ -21,6 +21,24 @@
     $("#main").fitVids();
   });
 
+  // fade in divs
+  var fadein = $('.fade');
+  $.each(fadein, function(i, item) {
+  	setTimeout(function() {
+  		$(item).addClass("fade-in"); // duration of fadein
+  	}, 100 * i); // duration between fadeins
+  });
+
 </script>
+<noscript>
+<style>
+.fade {
+  opacity: 1;
+}
+#homepage article {
+  opacity: .9;
+}
+</style>
+</noscript>
 </body>
 </html>
